@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'war'
-    id 'org.gretty' version '3.0.3'    
+    id 'org.gretty' version '2.2.0'    
 }
 
 dependencies {
@@ -27,7 +27,7 @@ repositories {
 
 /* configuração do gretty pra usar jetty*/
 gretty {
-  servletContainer = 'jetty9.3'
+  servletContainer = 'tomcat8'
 }
 
 test{
